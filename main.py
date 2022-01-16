@@ -14,6 +14,7 @@ WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 FPS = 60
 
 background = pygame.image.load(images.track_image_path)
+background = pygame.transform.scale(background, (WIDTH, HEIGHT))
 
 tower_group = pygame.sprite.Group()
 unit_group = pygame.sprite.Group()
